@@ -7,10 +7,10 @@ import { LoginPage } from '../login/login.page';
   styleUrls: ['./bienvenida.page.scss'],
 })
 export class BienvenidaPage implements OnInit {
+  navCtrl: any;
 
   constructor(
-    public modalCtrl: ModalController,
-  ) { }
+    public modalCtrl: ModalController,) { }
 
   ngOnInit() {
   }
@@ -28,6 +28,9 @@ export class BienvenidaPage implements OnInit {
 
 
   }
+
+
+  
 
   
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalController } from '@ionic/angular';
+import { ModalController, NavController, NavParams } from '@ionic/angular';
 
 
 @Component({
@@ -11,7 +11,7 @@ export class LoginPage implements OnInit {
 
 
   constructor(
-    public modalCtrl: ModalController,
+    public modalCtrl: ModalController, 
 
   ) { }
 
@@ -22,7 +22,6 @@ export class LoginPage implements OnInit {
   async dismiss(){
     await this.modalCtrl.dismiss();
   }
-
-
+  
 
 }

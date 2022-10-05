@@ -37,9 +37,14 @@ export class LoginPage  {
   login(){
     if(this.validarModelo(this.user)){
       this.presentToast('Bienvenido ' + this.user.email);
-      this.router.navigate(['/']);
+      this.router.navigate(['/inicio']);
+      this.user.username = '';
+      this.user.password = '';
     }
-    this.presentToast('Debes ingresar: ' + this.field)
+    else{
+      this.presentToast("Error al ingresar datos");
+
+    }
   }
 
   validarModelo(model:any){

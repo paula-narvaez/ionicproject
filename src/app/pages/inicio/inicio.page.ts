@@ -9,7 +9,7 @@ import { LoadingController } from '@ionic/angular';
 export class InicioPage {
 
   pageTitle = 'inicio';
-  isNotHome = false;
+  isNotInicio = false;
   loading: HTMLIonLoadingElement;
 
   constructor(private loadingCtrl:LoadingController) {}

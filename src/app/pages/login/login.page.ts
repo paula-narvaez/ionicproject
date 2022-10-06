@@ -12,6 +12,7 @@ export class LoginPage  {
     
   pageTitle='login';
   isNotHome= true;
+  box = document.getElementById('pantalla');
 
   //Modelo
   user : any = {
@@ -29,6 +30,11 @@ export class LoginPage  {
   ngOnInit() {
   }
 
+  salida(){
+    
+    this.box.style.setProperty('visibility', 'hidden');
+  }
+
 
   async dismiss(){
     await this.modalCtrl.dismiss();
@@ -40,6 +46,7 @@ export class LoginPage  {
       this.router.navigate(['/inicio']);
       this.user.username = '';
       this.user.password = '';
+      this.salida();
     }
     else{
       this.presentToast("Error al ingresar datos");

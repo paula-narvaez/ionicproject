@@ -19,15 +19,16 @@ const routes: Routes = [
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
   
-  
   {
     path: 'inicio',
     loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
   },
+
   {
     path: 'nosotros',
     loadChildren:  () => import('./pages/Nosotros/nosotros.module').then( m => m.NosotrosPageModule)
   },
+  
   {
     path: 'conversor',
     loadChildren: () => import('./pages/conversor/conversor.module').then( m => m.ConversorPageModule)

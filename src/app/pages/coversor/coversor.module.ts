@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ConversorPageRoutingModule } from './conversor-routing.module';
+import { CoversorPageRoutingModule } from './coversor-routing.module';
 
-import { ConversorPage } from './conversor.page';
+import { CoversorPage } from './coversor.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ConversorPageRoutingModule
+    CoversorPageRoutingModule
   ],
-  declarations: [ConversorPage]
+  declarations: [CoversorPage]
 })
-export class ConversorPageModule {}
+export class CoversorPageModule {}

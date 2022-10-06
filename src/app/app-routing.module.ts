@@ -30,10 +30,9 @@ const routes: Routes = [
   },
   
   {
-    path: 'conversor',
-    loadChildren: () => import('./pages/conversor/conversor.module').then( m => m.ConversorPageModule)
+    path: 'coversor',
+    loadChildren:  () => import('./pages/coversor/coversor.module').then( m => m.CoversorPageModule)
   },
-  
   
 ];
 

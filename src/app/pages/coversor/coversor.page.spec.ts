@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { ConversorPage } from './conversor.page';
+import { CoversorPage } from './coversor.page';
 
-describe('ConversorPage', () => {
-  let component: ConversorPage;
-  let fixture: ComponentFixture<ConversorPage>;
+describe('CoversorPage', () => {
+  let component: CoversorPage;
+  let fixture: ComponentFixture<CoversorPage>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ConversorPage ],
+      declarations: [ CoversorPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ConversorPage);
+    fixture = TestBed.createComponent(CoversorPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

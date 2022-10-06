@@ -29,8 +29,8 @@ const routes: Routes = [
     loadChildren:  () => import('./pages/Nosotros/nosotros.module').then( m => m.NosotrosPageModule)
   },
   {
-    path: 'otros',
-    loadChildren: () => import('./pages/otros/otros.module').then( m => m.OtrosPageModule)
+    path: 'conversor',
+    loadChildren: () => import('./pages/conversor/conversor.module').then( m => m.ConversorPageModule)
   },
   
   

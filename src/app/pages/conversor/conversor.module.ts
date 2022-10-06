@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { OtrosPageRoutingModule } from './otros-routing.module';
+import { ConversorPageRoutingModule } from './conversor-routing.module';
 
-import { OtrosPage } from './otros.page';
+import { ConversorPage } from './conversor.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    OtrosPageRoutingModule
+    ConversorPageRoutingModule
   ],
-  declarations: [OtrosPage]
+  declarations: [ConversorPage]
 })
-export class OtrosPageModule {}
+export class ConversorPageModule {}
